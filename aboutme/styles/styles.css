@@ -38,6 +38,7 @@ div {
  }
  main {
      text-align: center;
+     box-sizing: border-box;
      
  }
  main section img {
