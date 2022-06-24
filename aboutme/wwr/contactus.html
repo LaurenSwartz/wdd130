@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="/aboutme/styles/styles2.css"/>    
+<link rel="stylesheet" href="styles/contactus-new.css"/>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
             <a href="/aboutme/white-river-index.html">Home</a> 
             <a href="/aboutme/wwr/rivers.html">Page 2</a>  
             <a href="/aboutme/wwr/site-plan-rafting.html">Site Plan</a>
-            <a href="contactus.html">Contact Us</a>
+            <a href="/aboutme/wwr/contactus.html">Contact Us</a>
         </nav>    
     </header>
     <div id="hero"> 
@@ -29,9 +29,8 @@
             <h4>Make Memories with Dry Oar</h4> 
             <div class="button-box">
                 <a class="book" href="rates.html">Book Now</a>
-            </div> 
-        </section>
-    </div>
+        <div id="feedback"></div>
+    
     <main>
         <form action="" method="get" class="form-example">
             <div class="form-example">
@@ -46,7 +45,17 @@
               <input type="submit" value="Subscribe!">
             </div>
           </form>
-    </main>
+          <script>
+                const feedbackElement = document.getElementById('feedback');
+                const formElement = document.forms[0];
+                formElement.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                    feedbackElement.style.display = "block";
+                    document.body.classList.toggle('moveDown');
+                });
+         </script>             
+     </main>
     <footer>
         <h3>Dry Oar &copy; 2022 - Lauren Swartz</h3> 
         <h3><a href="site-plan-rafting.html">Site Plan</a></h3>  
