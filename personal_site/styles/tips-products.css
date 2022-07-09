@@ -59,9 +59,11 @@ body{
     width: 300px;
     padding: 35px;
     text-align: right;
+    
   
 
 }
+
 .image4-card{
     float: left;
     width: 40%;
@@ -91,6 +93,7 @@ p{
     border-style: groove;
     background-color: #005f73;
     
+    
 }
 #background{
     background-color: #9b2226;    
@@ -108,7 +111,7 @@ p{
     footer{
         background-color: #005f73;
         padding: 25px 50px;
-        margin-top: 300px;
+        margin-top: 0 px;
         display: flex;
         justify-content: space-around;
         align-items: center;
